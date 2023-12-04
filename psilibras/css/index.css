@@ -1,0 +1,39 @@
+.logo{
+    width: 500px;
+}
+
+body{
+    background-color: white;
+    font-family: 'Barlow', sans-serif;
+    color: black;
+}
+main{
+    height: 100vh;
+}
+
+.container-banner{
+    width: 100%;
+    height: 80%;
+    /* background-image: url("../img/banner-site.jpg"); */
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+
+.container-banner h1,p{
+    color: #FFFFFF;
+}
+
+h2{
+    text-align: center;
+    font-size: 48px;
+    margin: 20px 0px;
+    color: #FFF;
+    font-weight: bold;
+}
+
+.ornaments{
+    width: 200px;
+}
+
