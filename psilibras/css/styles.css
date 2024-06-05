@@ -3,9 +3,6 @@
     padding: 0%;
 }
 
-
-
-
 :root{
     --cor-fundo:#4acbb9;
     --cor-fundo-bg:#fffdd0;
@@ -17,48 +14,45 @@
 
 body{
     font-family: var(--fonte-principal);
-    background-color: white;   
+    background-color: white;
 }
 
 .cabecalho{
     width: 100%;
-    height: 100%;
+    height: 40%;
     display: flex;
     flex-direction: row;
-    background-color: white;
+    background-color:white;
     border-color: var(--cor-primaria);
-    /* border-style: ridge; */
-    border-radius: 5px;    
 }
 
+
 .cabecalho-logo{    
-    width: 190px;
-    height: 190px;  
-    
+    height: 100%;
+    width: 20%;
+    margin-left: 5%;
+   
+   
 }
 
 .cabecalho-nome{
-    margin-top: 2%;
-    width: 800px;
-    height: 140px;  
-    padding-top: 30px;
-    padding-left: 2%; 
+    width: 70%;
+   
+     
 }
 
 .cabecalho-ancora{
-    width: 300px;
     display: flex;
     flex-direction: row;
-    align-items: center;
-    margin-left: 4%;    
+     
 }
 
-.cabecalho-sobremim{
-    align-items: center;
-    margin-left: 4%;
-}
-.cabecalho-contato{
-    margin-left: 10%;
+.cabecalho-botoes{
+    align-items: center; 
+    padding: 0em 0em 0em 1em;
+    white-space: nowrap;
+    border: none;
+    border-color: none;
 }
 
 .btn-outline-primary{
@@ -74,16 +68,17 @@ body{
     height: 20px;
 }
 
+.teste{
+    background-color: black;
+}
+
 
 .container-img {
     background-image: url(img/dente-de-leao/dente-azul.png);
     background-size:cover ;
     background-repeat: no-repeat;    
     border: transparent;
-    margin-left: calc(-50vw + 50%);
-    margin-right: calc(-50vw + 50%);
-    height: 400px;
-    
+    width: 100%;
 }
 
 .container-texto{
@@ -94,6 +89,43 @@ body{
     color: white;
     padding: 20% 3.5% 5% 55%;
 }
+
+.container-img-sobremim {
+    background-image: url(img/dente-de-leao/02.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;    
+    border: transparent;
+    width: 100%;
+    
+}
+
+.container-texto-sobremim{
+    font-family:'Dancing Script', cursive;;
+    text-align: right;
+    font-size: 27px;
+    font-weight: 550;
+    color: white;
+    padding: 20% 3.5% 5% 55%;
+}
+
+.container-img-contato {
+    background-image: url(img/dente-de-leao/06.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;    
+    border: transparent;
+    width: 100%;
+    
+}
+
+.container-texto-contato{
+    font-family:'Dancing Script', cursive;;
+    text-align: right;
+    font-size: 27px;
+    font-weight: 550;
+    color: white;
+    padding: 20% 3.5% 5% 55%;
+}
+
 
 .container-card{
     margin: 5% 10%;   
@@ -156,7 +188,6 @@ body{
 }
 
 .contato{
-   
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -190,11 +221,8 @@ body{
     margin-right: 10px;
 }
 
-
-
 .apresentacao-qr{
-    align-items: center;
-   
+    align-items: center;   
 }
 
 a:hover{   
@@ -232,5 +260,126 @@ a:hover{
     font-size: 10px;
     text-align: center;
 }
+
+
+
+.container-admin-banner{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 80px 0px 20px;
+    background-color:white;
+}
+
+.logo-admin{
+    width: 400px;
+}
+
+.container-table{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    color: black; 
+    
+}
+
+table{
+    width: 90%;
+    margin: auto 0;
+}
+
+table, th, td{
+    border: 1px solid black;
+}
+
+table th{
+    padding: 11px 0 11px;
+    background-color: #4acbb9;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: left;
+    padding: 8px;
+}
+
+table tr{
+    border: 1px solid #ddd;
+}
+
+table td{
+    color: black;
+    font-size: 18px;
+    padding: 8px;
+}
+
+.container-admin-banner h1{
+    margin-top: 40px;
+    font-size: 30px;
+    color: #EBC181;
+}
+
+.container-lista-pacientes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: auto 0;
+}
+
+.container-lista{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: solid #EBC181 0.5px;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 3px 0;
+}
+
+.container-lista h3{
+    color: #FFFFFF;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+table tbody tr td a, .botao-cadastrar, .botao-excluir{
+    padding: 3px 10px;
+    border-radius: 10px;
+    color: #FFFFFF;
+    text-decoration: none;
+    margin: 0 5px;
+    transition: 0.7s;
+    border: none;
+    font-size: 18px;
+}
+
+
+table tbody tr td a:hover, .botao-cadastrar:hover, .botao-excluir:hover{
+    cursor: pointer;
+    filter: saturate(150%);
+}
+
+.botao-cadastrar{
+    background: #EBC181;
+    color: #333B1E;
+    font-weight: 600;
+    margin-top: 20px;
+    font-size: 20px;
+    border-radius: 10px;
+    padding: 10px 10px;
+    border: none;
+}
+
+
+.botao-editar{
+    background: #9B8357;
+}
+
+.botao-excluir{
+    background: crimson;
+}
+
 
 
